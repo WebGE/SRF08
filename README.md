@@ -1,8 +1,6 @@
 SRF08
 =====
 
-A NETMF library for the SRF08 Ultra sonic range finder.
-
 Tags: SRF08, Ultra sonic range finder, Netduino, Netduino plus 2, Secretlabs, C#, Visual Studio.
 
 Target: Netduino plus 2.
