@@ -1,0 +1,44 @@
+c:\users\philippe\documents\visual studio 2010\Projects\NetduinoSRF08US\NetduinoSRF08US\bin\Debug\le\NetduinoSRF08US.exe
+c:\users\philippe\documents\visual studio 2010\Projects\NetduinoSRF08US\NetduinoSRF08US\bin\Debug\be\NetduinoSRF08US.exe
+c:\users\philippe\documents\visual studio 2010\Projects\NetduinoSRF08US\NetduinoSRF08US\bin\Debug\le\NetduinoSRF08US.pdb
+c:\users\philippe\documents\visual studio 2010\Projects\NetduinoSRF08US\NetduinoSRF08US\bin\Debug\be\NetduinoSRF08US.pdb
+c:\users\philippe\documents\visual studio 2010\Projects\NetduinoSRF08US\NetduinoSRF08US\bin\Debug\NetduinoSRF08US.exe
+c:\users\philippe\documents\visual studio 2010\Projects\NetduinoSRF08US\NetduinoSRF08US\bin\Debug\NetduinoSRF08US.pdb
+c:\users\philippe\documents\visual studio 2010\Projects\NetduinoSRF08US\NetduinoSRF08US\bin\Debug\le\NetduinoSRF08US.pe
+c:\users\philippe\documents\visual studio 2010\Projects\NetduinoSRF08US\NetduinoSRF08US\bin\Debug\le\NetduinoSRF08US.pdbx
+c:\users\philippe\documents\visual studio 2010\Projects\NetduinoSRF08US\NetduinoSRF08US\bin\Debug\be\NetduinoSRF08US.pe
+c:\users\philippe\documents\visual studio 2010\Projects\NetduinoSRF08US\NetduinoSRF08US\bin\Debug\be\NetduinoSRF08US.pdbx
+c:\users\philippe\documents\visual studio 2010\Projects\NetduinoSRF08US\NetduinoSRF08US\bin\Debug\LE\SecretLabs.NETMF.Hardware.pe
+c:\users\philippe\documents\visual studio 2010\Projects\NetduinoSRF08US\NetduinoSRF08US\bin\Debug\LE\SecretLabs.NETMF.Hardware.Netduino.pe
+c:\users\philippe\documents\visual studio 2010\Projects\NetduinoSRF08US\NetduinoSRF08US\bin\Debug\BE\SecretLabs.NETMF.Hardware.pe
+c:\users\philippe\documents\visual studio 2010\Projects\NetduinoSRF08US\NetduinoSRF08US\bin\Debug\BE\SecretLabs.NETMF.Hardware.Netduino.pe
+c:\users\philippe\documents\visual studio 2010\Projects\NetduinoSRF08US\NetduinoSRF08US\bin\Debug\LE\SecretLabs.NETMF.Hardware.pdbx
+c:\users\philippe\documents\visual studio 2010\Projects\NetduinoSRF08US\NetduinoSRF08US\bin\Debug\LE\SecretLabs.NETMF.Hardware.Netduino.pdbx
+c:\users\philippe\documents\visual studio 2010\Projects\NetduinoSRF08US\NetduinoSRF08US\bin\Debug\BE\SecretLabs.NETMF.Hardware.pdbx
+c:\users\philippe\documents\visual studio 2010\Projects\NetduinoSRF08US\NetduinoSRF08US\bin\Debug\BE\SecretLabs.NETMF.Hardware.Netduino.pdbx
+c:\users\philippe\documents\visual studio 2010\Projects\NetduinoSRF08US\NetduinoSRF08US\bin\Debug\SecretLabs.NETMF.Hardware.dll
+c:\users\philippe\documents\visual studio 2010\Projects\NetduinoSRF08US\NetduinoSRF08US\bin\Debug\SecretLabs.NETMF.Hardware.Netduino.dll
+c:\users\philippe\documents\visual studio 2010\Projects\NetduinoSRF08US\NetduinoSRF08US\bin\Debug\SecretLabs.NETMF.Hardware.pdb
+c:\users\philippe\documents\visual studio 2010\Projects\NetduinoSRF08US\NetduinoSRF08US\bin\Debug\SecretLabs.NETMF.Hardware.Netduino.pdb
+c:\users\philippe\documents\visual studio 2010\Projects\NetduinoSRF08US\NetduinoSRF08US\obj\Debug\be\NetduinoSRF08US.pe
+c:\users\philippe\documents\visual studio 2010\Projects\NetduinoSRF08US\NetduinoSRF08US\obj\Debug\be\NetduinoSRF08US.pdbx
+c:\users\philippe\documents\visual studio 2010\Projects\NetduinoSRF08US\NetduinoSRF08US\obj\Debug\le\NetduinoSRF08US.pe
+c:\users\philippe\documents\visual studio 2010\Projects\NetduinoSRF08US\NetduinoSRF08US\obj\Debug\le\NetduinoSRF08US.pdbx
+c:\users\philippe\documents\visual studio 2010\Projects\NetduinoSRF08US\NetduinoSRF08US\obj\Debug\NetduinoSRF08US.exe
+c:\users\philippe\documents\visual studio 2010\Projects\NetduinoSRF08US\NetduinoSRF08US\obj\Debug\NetduinoSRF08US.pdb
+F:\Travail_en_cours\1c_Embedded_C#\3_NetDuino\4_Code_C#\Exemples_prog_Eleve_MSVS2010\NetduinoSRF08US\NetduinoSRF08US\bin\Debug\le\NetduinoSRF08US.exe
+F:\Travail_en_cours\1c_Embedded_C#\3_NetDuino\4_Code_C#\Exemples_prog_Eleve_MSVS2010\NetduinoSRF08US\NetduinoSRF08US\bin\Debug\be\NetduinoSRF08US.exe
+F:\Travail_en_cours\1c_Embedded_C#\3_NetDuino\4_Code_C#\Exemples_prog_Eleve_MSVS2010\NetduinoSRF08US\NetduinoSRF08US\bin\Debug\le\NetduinoSRF08US.pdb
+F:\Travail_en_cours\1c_Embedded_C#\3_NetDuino\4_Code_C#\Exemples_prog_Eleve_MSVS2010\NetduinoSRF08US\NetduinoSRF08US\bin\Debug\be\NetduinoSRF08US.pdb
+F:\Travail_en_cours\1c_Embedded_C#\3_NetDuino\4_Code_C#\Exemples_prog_Eleve_MSVS2010\NetduinoSRF08US\NetduinoSRF08US\bin\Debug\NetduinoSRF08US.exe
+F:\Travail_en_cours\1c_Embedded_C#\3_NetDuino\4_Code_C#\Exemples_prog_Eleve_MSVS2010\NetduinoSRF08US\NetduinoSRF08US\bin\Debug\NetduinoSRF08US.pdb
+F:\Travail_en_cours\1c_Embedded_C#\3_NetDuino\4_Code_C#\Exemples_prog_Eleve_MSVS2010\NetduinoSRF08US\NetduinoSRF08US\bin\Debug\le\NetduinoSRF08US.pe
+F:\Travail_en_cours\1c_Embedded_C#\3_NetDuino\4_Code_C#\Exemples_prog_Eleve_MSVS2010\NetduinoSRF08US\NetduinoSRF08US\bin\Debug\le\NetduinoSRF08US.pdbx
+F:\Travail_en_cours\1c_Embedded_C#\3_NetDuino\4_Code_C#\Exemples_prog_Eleve_MSVS2010\NetduinoSRF08US\NetduinoSRF08US\bin\Debug\be\NetduinoSRF08US.pe
+F:\Travail_en_cours\1c_Embedded_C#\3_NetDuino\4_Code_C#\Exemples_prog_Eleve_MSVS2010\NetduinoSRF08US\NetduinoSRF08US\bin\Debug\be\NetduinoSRF08US.pdbx
+F:\Travail_en_cours\1c_Embedded_C#\3_NetDuino\4_Code_C#\Exemples_prog_Eleve_MSVS2010\NetduinoSRF08US\NetduinoSRF08US\obj\Debug\be\NetduinoSRF08US.pe
+F:\Travail_en_cours\1c_Embedded_C#\3_NetDuino\4_Code_C#\Exemples_prog_Eleve_MSVS2010\NetduinoSRF08US\NetduinoSRF08US\obj\Debug\be\NetduinoSRF08US.pdbx
+F:\Travail_en_cours\1c_Embedded_C#\3_NetDuino\4_Code_C#\Exemples_prog_Eleve_MSVS2010\NetduinoSRF08US\NetduinoSRF08US\obj\Debug\le\NetduinoSRF08US.pe
+F:\Travail_en_cours\1c_Embedded_C#\3_NetDuino\4_Code_C#\Exemples_prog_Eleve_MSVS2010\NetduinoSRF08US\NetduinoSRF08US\obj\Debug\le\NetduinoSRF08US.pdbx
+F:\Travail_en_cours\1c_Embedded_C#\3_NetDuino\4_Code_C#\Exemples_prog_Eleve_MSVS2010\NetduinoSRF08US\NetduinoSRF08US\obj\Debug\NetduinoSRF08US.exe
+F:\Travail_en_cours\1c_Embedded_C#\3_NetDuino\4_Code_C#\Exemples_prog_Eleve_MSVS2010\NetduinoSRF08US\NetduinoSRF08US\obj\Debug\NetduinoSRF08US.pdb
