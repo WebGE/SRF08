@@ -110,7 +110,7 @@ valeur de la distance en "<strong>mm</strong>", en "inch" ou sous la forme d'une
 <hr>
 <ol>
 	<li><strong>Créer</strong> un objet en utilisant un des constructeurs SRF08.</li>
-	<li><strong>Utiliser</strong> la méthode <em>ReadRange</em> pour déclencher et lire la distance.</li>
+	<li><strong>Utiliser</strong> la méthode <em>ReadRange</em> pour déclencher et lire la distance en une seule opération.</li>
 </ol>
 <hr>
 <p><strong>Constructeurs</strong></p>
@@ -122,39 +122,20 @@ valeur de la distance en "<strong>mm</strong>", en "inch" ou sous la forme d'une
 </tr>
 <tr>
 	<td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_constructor_VS.png"></td>
-	<td><strong>I2CLcd</strong>()</td>
-	<td>Instancie un objet "I2CLcd" avec les paramètres : <br/> Fabricant = Midas <br/> Fréquence du bus: 100kHz</td>
+	<td><strong>SRF08</strong>()</td>
+	<td>Instancie un objet "SRF08" avec les paramètres : <br/> Adresse du module = 0x70 <br/> Fréquence du bus: 100kHz</td>
 </tr>
 <tr>
 	<td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_constructor_VS.png"></td>
-	<td><strong>I2CLcd</strong>(<strong>UInt16</strong> <em>I2C_Add_7bits)</em></td>
-	<td>Instancie un objet "I2CLcd". <br> <em>I2C_Add_7bits</em> est l'adresse I2C sur 7 bits attribuée à l'afficheur. <br/> Fréquence du bus: 100kHz.</td>
+	<td><strong>SRF08</strong>(<strong>byte</strong> <em>I2C_Add_7bits</em>)</td>
+	<td>Instancie un objet "SRF08". <br> <em>I2C_Add_7bits</em> est l'adresse I2C sur 7 bits attribuée au module. Elle doit être comprise entre 0x70 et 0x7F <br/> Fréquence du bus: 100kHz.</td>
 </tr>
 <tr>
 	<td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_constructor_VS.png"></td>
-	<td><strong>I2CLcd</strong>(<strong>LcdManufacturer</strong> <em>ManufacturerName</em>)</td>
-	<td>Instancie un objet "I2CLcd". <em>ManufacturerName</em> est le nom du fabricant.<br/> Il correspond à l'adresse I2C du LCD :
-		<ul>
-			<li><strong>Midas</strong> (0x3a)</li>
-			<li><strong>Batron</strong> (0x3b)</li>
-		</ul>			
-		Fréquence du bus: 100kHz. 
-	</td>
-</tr>
-<tr>
-	<td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_constructor_VS.png"></td>
-	<td><strong>I2CLcd</strong>(<strong>UInt16</strong> <em>I2C_Add_7bits</em>, <strong>UInt16</strong> <em>Frequency</em>)</td>
-	<td>Instancie un objet "I2CLcd". <br> <em>I2C_Add_7bits</em> est l'adresse I2C sur 7 bits attribuée à l'afficheur.  <br><em>Frequency</em> est à définir dans l'intervalle [100kHz,400kHz]. </td>
-</tr>
-<tr>
-	<td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_constructor_VS.png"></td>
-	<td><strong>I2CLcd</strong>(<strong>LcdManufacturer</strong> <em>ManufacturerName</em>, <strong>UInt16</strong> <em>Frequency</em>)</td>
-	<td>Instancie un objet "I2CLcd". <em>ManufacturerName</em> est le nom du fabricant.<br/> Il correspond à l'adresse I2C du LCD :
-		<ul>
-			<li><strong>Midas</strong> (0x3a)</li>
-			<li><strong>Batron</strong> (0x3b)</li>
-		</ul>			
-	<em>Frequency</em> est à définir dans l'intervalle [100kHz,400kHz]. 
+	<td><strong>SRF08</strong>(<strong>byte</strong> <em>I2C_Add_7bits</em>, <strong>UInt16</strong> <em>FreqBusI2C</em>)</td>
+	<td>Instancie un objet "SRF08". <br/>
+		<em>I2C_Add_7bits</em> est l'adresse I2C sur 7 bits attribuée au module. Elle doit être comprise entre 0x70 et 0x7F. <br/> 
+		<em>FreqBusI2C </em> est à définir dans l'intervalle [100kHz,400kHz].
 	</td>
 </tr>
 </table>
@@ -168,23 +149,59 @@ valeur de la distance en "<strong>mm</strong>", en "inch" ou sous la forme d'une
 </tr>
 <tr>
 	<td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_enum_VS.png"></td>
-	<td><strong>LcdManufacturer</strong></td>
+	<td><strong>MeasuringUnits</strong></td>
 	<td>
-	MIDAS : 0x3a (par défaut)<br/>
-	BATRON : 0x3B
+	<p>Mode "Ranging"</p>
+	<em>inches_InRangingMode</em>: résultat de la mesure en inches<br/>
+	<em>centimeters_InRangingMode</em>: résultat de la mesure en centimètres<br/>
+	<em>microseconds_InRangingMode</em>: résultat de la mesure en microsecondes<br/>
+	<p>Mode "ANN"</p>
+	<em>inches_InANNMode</em>: résultat de la mesure en inches<br/>
+	<em>centimeters_InANNMode</em>: résultat de la mesure en centimètres<br/>
+	<em>microseconds_InANNMode</em>: résultat de la mesure en microsecondes<br/>
 	</td>
 </tr>
-<tr>
-	<td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_enum_VS.png"></td>
-	<td><strong>CursorType</strong></td>
-	<td>
-	Hide : caché (par défaut)<br />
-	Underline : soulignement<br />
-	Blink : clignotant
-	</td>
-</tr>
-</table>
 
+</table>
+<p><strong>Propriétés</strong></p>
+<table>
+	<tr>
+	  <td></td>
+	  <td><strong>Syntaxe</strong></td>
+	  <td><strong>Description</strong></td>
+	</tr>
+	<tr>
+	  <td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_property_VS.png"></td>
+	  <td><strong>FirstEchoHighByte</strong></td>
+	 	  <td>Retourne l'octet de poids fort du mot représentatif de la réception du premier écho.<br/>
+	  </td>
+	</tr>
+	<tr>
+	  <td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_property_VS.png"></td>
+	  <td><strong>FirstEchoLowByte</strong></td>
+	  <td>Retourne l'octet de poids faible du mot représentatif de la réception du premier écho.<br/>
+	  </td>
+	</tr>
+	<tr>
+	  <td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_property_VS.png"></td>
+	  <td><strong>LightSensor</strong></td>
+	  <td>Retourne un octet représentatif de la luminosité mesurée par la LDR.</td>
+	</tr>
+	
+	<tr>
+	  <td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_property_VS.png"></td>
+	<td><strong>Mode</strong></td>
+	  <td>Retourne sous la forme d'une chaîne de caractères le mode de fonctionnement du module:<br/>
+	    <strong>- Ranging: </strong>??<br/>
+	    <strong>- ANN: </strong>??<br/>
+	  </td>
+	</tr>
+	<tr>
+	  <td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_property_VS.png"></td>
+	  <td><strong>VerSoft</strong></td>
+	  <td>Retourne le numéro de version du logiciel du module SRF08. Octet non signé.</td>
+	</tr>
+</table>
 <p><strong>Méthodes publiques</strong></p>
 <table>
 <tr>
@@ -194,58 +211,23 @@ valeur de la distance en "<strong>mm</strong>", en "inch" ou sous la forme d'une
 </tr>
 <tr>
 	<td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_method_VS.png"></td>
-	<td><strong>void ClearScreen</strong>()</td>
-	<td>Efface l'écran (2 x 16 caractères).</td>
-</tr>
-<tr>
-	<td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_method_VS.png"></td>
-	<td><strong>void Init</strong>()</td>
-	<td>Initialise l'afficheur en mode 2 x 16 caractères. A utiliser en premier après la construction de l'objet.</td>
-</tr>
-<tr>
-	<td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_method_VS.png"></td>
-	<td><strong>void LineBegin</strong>(<strong>byte</strong> <em>x</em>)</td>
+	<td><strong>UInt16 ReadRange</strong>(<strong>MeasuringUnits</strong> <em>units</em>)</td>
 	<td>
-	<p>Fixe le début de la ligne.</p>
-	<p><em>x</em>: position en x sur l'afficheur (0..15).</p>
+		<p>Déclenche la mesure de distance et renvoie le résultat de la mesure sous la forme d'un entier sur 16 bits dans le format demandé.</p>
+		<p> Remarque: La méthode effectue une mesure en 75ms</p>
+		<p><em>units</em>: unité du résultat de la mesure (centimètres, inches, microsecondes).</p>
 	</td>
 </tr>
 <tr>
 	<td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_method_VS.png"></td>
-	<td><strong>void PutChar</strong>(<strong>byte</strong> <em>x_pos</em>, <strong>byte</strong> <em>y_pos</em>, <strong>byte</strong> <em>z_char</em>)</td>
+	<td><strong>void TrigShotUS</strong>(<strong>MeasuringUnits</strong> <em>units</em>))</td>
 	<td>
-		<p>Ecrit un caractère (z_char) aux coordonnées (x_pos, y_pos) de l'afficheur.
-		<p><em>x_pos</em>: position en x sur l'afficheur (0..15).</p>
-		<p><em>y_pos</em>: position en y sur l'afficheur (0..1).</p>
-		<p><em>z_char</em>: caractère à afficher.</p>
+		<p>Déclenche la mesure de distance.</p><p> Le temps d'attente et la lecture du registre contenant le résultat de la mesure sont à la charge du programmeur.</p>
+		<p><em>units</em>: unité du résultat de la mesure (centimètres, inches, microsecondes).</p>
 	</td>
 </tr>
-<tr>
-	<td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_method_VS.png"></td>
-	<td><strong>void PutString</strong>(<strong>byte</strong> <em>x_pos</em>, <strong>byte</strong> <em>y_pos</em>, <strong>string</strong> <em>Text</em>)</td>
-	<td>
-		<p>Ecrit une chaîne de caractères (Text) aux coordonnées (x_pos, y_pos) de l'afficheur.
-		<p><em>x_pos</em>: position en x sur l'afficheur (0..15).</p>
-		<p><em>y_pos</em>: position en y sur l'afficheur (0..1).</p>
-		<p><em>Text</em>: Chaîne à afficher.</p>
-	</td>
-</tr>
-<tr>
-	<td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_method_VS.png"></td>
-	<td><strong>void SelectCursor</strong>(<strong>CursorType</strong> <em>posCursorx</em>)</td>
-	<td>
-	<p>Sélection du curseur</p>
-	<p><em>CursorType</em>: Hide, Underline, Blink</p>
-	</td>
-</tr>
-<tr>
-	<td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_method_VS.png"></td>
-	<td><strong>void SetBacklight</strong>(<strong>byte</strong> <em>bright</em>)</td>
-	<td>
-		<p>Réglage du contraste de l'aficheur</p>
-		<p><em>bright</em>: 20 dark -> 0 light</p>
-	</td>
-</tr>
+
+
 </table>
 
       </section>
@@ -254,7 +236,7 @@ valeur de la distance en "<strong>mm</strong>", en "inch" ou sous la forme d'une
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        <p class="copyright">Mesurer une distance avec un module SRF08 maintained by <a href="https://github.com/WebGE">WebGE</a></p>
+        <p class="copyright">Mesurer une distance avec un télémètre à ultrasons SRF08 maintained by <a href="https://github.com/WebGE">WebGE</a></p>
         <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
