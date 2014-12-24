@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-    <title>Mesurer une distance avec un module SRF08</title>
+    <title>SRF08</title>
   </head>
 
   <body>
@@ -18,8 +18,8 @@
         <header class="inner">
           <a id="forkme_banner" href="https://github.com/WebGE/SRF08">View on GitHub</a>
 
-          <h1 id="project_title">Mesurer une distance avec un télémètre SRF08</h1>
-          <h2 id="project_tagline">Programme de test en C# et description de la classe SRF08</h2>
+          <h1 id="project_title">Mesurer une distance avec un télémètre à ultrasons SRF08</h1>
+          <h2 id="project_tagline">Programme de test en C# et description de la classe SRF08 destinés à une Netduino+2</h2>
 
             <section id="downloads">
               <a class="zip_download_link" href="https://github.com/WebGE/SRF08/zipball/master">Download this project as a .zip file</a>
@@ -35,17 +35,18 @@
 <a name="t%C3%A9l%C3%A9m%C3%A8tre-%C3%A0-ultrasons-srf08" class="anchor" href="#t%C3%A9l%C3%A9m%C3%A8tre-%C3%A0-ultrasons-srf08"><span class="octicon octicon-link"></span></a>Télémètre à ultrasons "SRF08"</h3>
 
 <hr>
+<ul>
+  <li><strong>Présentation</strong></li>
 <p>Ce module est conçu pour les applications de télémétrie pour robotique ludique. Il est capable de déterminer la distance qui le sépare d'un obstacle 
 se présentant devant lui (entre 3 cm et 6 m). Doté de 2 cellules à ultrasons, son principe de fonctionnement repose sur celui des "sonars".
 Il s'interface à l'aide de son bus <strong>I2C™</strong> et se pilote à la manière d'une mémoire EEPROM type 24xx . Il peut retourner la 
 valeur de la distance en "<strong>mm</strong>", en "inch" ou sous la forme d'une durée (en µs) liée à l’écho de l'émetteur ultrason.
 </p>
-<p><img src="http://www.eng.uwaterloo.ca/%7Eck2lee/style/SRF08.jpg" width="25%" height="25%" alt=""></p>
+<p align="center"><img  src="http://www.eng.uwaterloo.ca/%7Eck2lee/style/SRF08.jpg" width="25%" height="25%" alt=""></p>
 
-<ul>
   <li>
     <strong>Diagramme de rayonnement</strong>
-    <p><img src="http://www.robot-electronics.co.uk/images/beam.gif" alt=""></p>
+    <p align="center"><img src="http://www.robot-electronics.co.uk/images/beam.gif" alt=""></p>
   </li>
 <li>
 <strong>Alimentation</strong> : 5V (15mA Typ. 3mA Standby).</li>
@@ -60,6 +61,58 @@ valeur de la distance en "<strong>mm</strong>", en "inch" ou sous la forme d'une
 <strong>Distributeur</strong> : <a href="http://www.lextronic.fr/P1764-telemetre-ultrason-srf08.html" target="_blank" >Lextronic</a>
 </li>
 </ul>
+<hr/>
+ <h3>
+<a name="carte-netduino-de-secret-labs" class="anchor" href="#carte-netduino-de-secret-labs" target="_blank"><span class="octicon octicon-link"></span></a>Carte NetDuino plus 2 </h3><h5>Secret Labs</h5>
+<hr>
+<ul>
+<li>
+<strong>Microcontrôleur</strong> : STM32F405RG 32 bits à architecture Cortex-M4 cadencé à 168 MHz.</li>
+<li>
+<strong>RAM</strong> : 100 KB.</li>
+<li>
+<strong>Flash</strong> : 384 KB.</li>
+<li>
+<strong>Port Ethernet</strong> 10Mbps.</li>
+<li>
+<strong>E/S numériques</strong> : 14</li>
+<li>
+<strong>Entrées analogiques</strong> : 6</li>
+<li>
+<strong>IDE</strong> : Microsoft Visual Studio (professionnel ou express)</li>
+<li>
+<strong>Framework</strong> : micro framework .NET (NETMF)</li>
+<li>
+<strong>Langage de programmation</strong> : C#</li>
+</ul><p align="center"><img src="http://cdn.netduino.com/images/hardware/netduino2/photo_overhead.gif" alt="Netduino+ 2"></p>
+
+<ul>
+<li>
+<strong>Sites à consulter</strong>: <a href="http://netduino.com/netduinoplus2/specs.htm" target="_blank">Netduino</a>, <a href="http://www.netmf.com/" target="_blank">NETMF</a>
+</li>
+<li>
+<strong>Distributeurs</strong> : <a href="http://www.robotshop.com/en/catalogsearch/result/?q=netduino&order=stats_sales_order_count&dir=desc" target="_blank">RobotShop</a>, <a href="http://www.mouser.fr/Search/Refine.aspx?Keyword=netduino" target="_blank">Mouser Electronics</a>
+</li>
+</ul>
+<hr>
+<h3>Classe SRF08</h3>
+<hr>
+<p><strong>Contenu du dossier à télécharger</strong></p>
+<hr>
+<p> Le dossier à télécharger (au format zip ou tar.gz) contient le répertoire d'un projet <strong>Microsoft Visual Studio Professionnel</strong> composé : </p>
+<ul>
+	<li>Du code de la classe SRF08.</li>
+	<li>D'un exemple d'utilisation de cette classe.</li>
+</ul>
+<p> Les fichiers program.cs et DriversSRF08.cs pourront être recompilés avec <strong>Microsoft Visual Studio Express</strong>.</p>
+<hr>
+<p><strong>Utilisation</strong></p>
+<hr>
+<ol>
+	<li><strong>Créer</strong> un objet en utilisant un des constructeurs SRF08.</li>
+	<li><strong>Utiliser</strong> la méthode <em>ReadRange</em> pour déclencher et lire la distance</li>
+</ol>
+<hr>
       </section>
     </div>
 
