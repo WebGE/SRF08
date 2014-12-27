@@ -1,16 +1,15 @@
 ﻿using System;
 using System.Threading;
 using Microsoft.SPOT;
-using Microsoft.SPOT.Hardware;
 
-using TelemetreUS;
+using ToolBoxes;
 
-namespace NetduinoSRF08US
+namespace TestNetduinoSRF08US
 {
     public class Program
-    {
+    {// Documentation de la classe SRF08 https://github.com/WebGE/SRF08/
         public static void Main()
-        {
+        {// Utiliser une alimentation secteur 
             // Paramètres du bus I2C
             byte addTelem_I2C = 0x70; // Adresse (7 bits) du télémètre SRF08
             UInt16 Freq = 400; // Fréquence d'horloge du bus I2C en kHz
@@ -54,3 +53,4 @@ namespace NetduinoSRF08US
 
     }
 }
+
