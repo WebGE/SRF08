@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetduinoSRF08US", "NetduinoSRF08US\NetduinoSRF08US.csproj", "{4CFDDB0D-2F71-4B0E-B11E-0CE0F583B134}"
 EndProject
 Global
