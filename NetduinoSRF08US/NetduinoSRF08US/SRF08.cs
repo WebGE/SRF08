@@ -5,7 +5,7 @@ using Microsoft.SPOT.Hardware;
 
 namespace ToolBoxes
 {
-    class SRF08
+    public class SRF08
         {
             // I2C
             private const Int16 TRANSACTIONEXECUTETIMEOUT = 1000;
