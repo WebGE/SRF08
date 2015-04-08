@@ -1,0 +1,16 @@
+C:\Users\Philippe\Documents\GitHub\SRF08\NetduinoSRF08US\SRF08\bin\Debug\le\SRF08.dll
+C:\Users\Philippe\Documents\GitHub\SRF08\NetduinoSRF08US\SRF08\bin\Debug\be\SRF08.dll
+C:\Users\Philippe\Documents\GitHub\SRF08\NetduinoSRF08US\SRF08\bin\Debug\le\SRF08.pdb
+C:\Users\Philippe\Documents\GitHub\SRF08\NetduinoSRF08US\SRF08\bin\Debug\be\SRF08.pdb
+C:\Users\Philippe\Documents\GitHub\SRF08\NetduinoSRF08US\SRF08\bin\Debug\SRF08.dll
+C:\Users\Philippe\Documents\GitHub\SRF08\NetduinoSRF08US\SRF08\bin\Debug\SRF08.pdb
+C:\Users\Philippe\Documents\GitHub\SRF08\NetduinoSRF08US\SRF08\bin\Debug\le\SRF08.pe
+C:\Users\Philippe\Documents\GitHub\SRF08\NetduinoSRF08US\SRF08\bin\Debug\le\SRF08.pdbx
+C:\Users\Philippe\Documents\GitHub\SRF08\NetduinoSRF08US\SRF08\bin\Debug\be\SRF08.pe
+C:\Users\Philippe\Documents\GitHub\SRF08\NetduinoSRF08US\SRF08\bin\Debug\be\SRF08.pdbx
+C:\Users\Philippe\Documents\GitHub\SRF08\NetduinoSRF08US\SRF08\obj\Debug\be\SRF08.pe
+C:\Users\Philippe\Documents\GitHub\SRF08\NetduinoSRF08US\SRF08\obj\Debug\be\SRF08.pdbx
+C:\Users\Philippe\Documents\GitHub\SRF08\NetduinoSRF08US\SRF08\obj\Debug\le\SRF08.pe
+C:\Users\Philippe\Documents\GitHub\SRF08\NetduinoSRF08US\SRF08\obj\Debug\le\SRF08.pdbx
+C:\Users\Philippe\Documents\GitHub\SRF08\NetduinoSRF08US\SRF08\obj\Debug\SRF08.dll
+C:\Users\Philippe\Documents\GitHub\SRF08\NetduinoSRF08US\SRF08\obj\Debug\SRF08.pdb
