@@ -40,7 +40,7 @@
 <p>Ce module est conçu pour les applications de télémétrie pour robotique ludique. Il est capable de déterminer la distance qui le sépare d'un obstacle 
 se présentant devant lui (entre 3 cm et 6 m). Doté de 2 cellules à ultrasons, son principe de fonctionnement repose sur celui des "sonars".
 Il s'interface à l'aide de son bus <strong>I2C™</strong> et se pilote à la manière d'une mémoire EEPROM type 24xx . Il peut retourner la 
-valeur de la distance en "<strong>mm</strong>", en "inch" ou sous la forme d'une durée (en µs) liée à l’écho de l'émetteur ultrason.
+valeur de la distance en "<strong>cm</strong>", en "inch" ou sous la forme d'une durée (en µs) liée à l’écho de l'émetteur ultrason.
 </p>
 <p align="center"><img  src="http://www.eng.uwaterloo.ca/%7Eck2lee/style/SRF08.jpg" width="25%" height="25%" alt=""></p>
 
@@ -84,7 +84,7 @@ valeur de la distance en "<strong>mm</strong>", en "inch" ou sous la forme d'une
 <strong>Framework</strong> : micro framework .NET (NETMF)</li>
 <li>
 <strong>Langage de programmation</strong> : C#</li>
-</ul><p align="center"><img src="http://cdn.netduino.com/images/hardware/netduino2/photo_overhead.gif" alt="Netduino+ 2"></p>
+</ul><p align="center"><img src="https://lh4.googleusercontent.com/-r-2bq_1YFzw/VUNMy1EODoI/AAAAAAAABXU/q20WYrAvnDw/w350-h280-no/NETDuino2plus.JPG" alt="Netduino+ 2"></p>
 
 <ul>
 <li>
@@ -110,7 +110,7 @@ valeur de la distance en "<strong>mm</strong>", en "inch" ou sous la forme d'une
 <ol>
 	<li><strong>Ajouter</strong> la référence<strong> SRF08 </strong>et l'espace de nom <strong>ToolBoxes </strong>dans le projet.</li>
 	<li><strong>Créer</strong> un objet en utilisant un des constructeurs SRF08.</li>
-	<li><strong>Utiliser</strong> la méthode <em>ReadRange</em> pour déclencher et lire la distance en une seule opération.</li>
+	<li><strong>Utiliser</strong> la méthode <strong>ReadRange</strong> pour déclencher et lire la distance en une seule opération.</li>
 </ol>
 <hr>
 <p><strong>Constructeurs</strong></p>
@@ -123,7 +123,7 @@ valeur de la distance en "<strong>mm</strong>", en "inch" ou sous la forme d'une
 <tr>
 	<td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_constructor_VS.png"></td>
 	<td><strong>SRF08</strong>()</td>
-	<td>Instancie un objet "SRF08" avec les paramètres : <br/> Adresse du module = 0x70 <br/> Fréquence du bus: 100kHz</td>
+	<td>Instancie un objet "SRF08" avec les paramètres : <br/> Adresse <strong>SLA</strong> du module = 0x70 <br/> Fréquence du bus: 100kHz</td>
 </tr>
 <tr>
 	<td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_constructor_VS.png"></td>
