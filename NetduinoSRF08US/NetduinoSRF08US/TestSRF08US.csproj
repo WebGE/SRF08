@@ -47,4 +47,11 @@
       <Name>SRF08</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Lisez-moi.txt" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Doc_A_Consulter\SRF08UltraSonicRanger.pdf" />
+  </ItemGroup>
 </Project>
