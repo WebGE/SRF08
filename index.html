@@ -31,15 +31,15 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <hr><h3>
-<a name="t%C3%A9l%C3%A9m%C3%A8tre-%C3%A0-ultrasons-srf08" class="anchor" href="#t%C3%A9l%C3%A9m%C3%A8tre-%C3%A0-ultrasons-srf08"><span class="octicon octicon-link"></span></a>Télémètre à ultrasons "SRF08"</h3>
+        <hr>
+        <h3>Le télémètre à ultrasons "SRF08"</h3>
 
 <hr>
 <ul>
   <li><strong>Présentation</strong></li>
 <p>Ce module est conçu pour les applications de télémétrie pour robotique ludique. Il est capable de déterminer la distance qui le sépare d'un obstacle 
 se présentant devant lui (entre 3 cm et 6 m). Doté de 2 cellules à ultrasons, son principe de fonctionnement repose sur celui des "sonars".
-Il s'interface à l'aide de son bus <strong>I2C™</strong> et se pilote à la manière d'une mémoire EEPROM type 24xx . Il peut retourner la 
+Il s'interface à l'aide de son bus <strong>I²C™</strong> et se pilote à la manière d'une mémoire EEPROM type 24xx . Il peut retourner la 
 valeur de la distance en "<strong>cm</strong>", en "inch" ou sous la forme d'une durée (en µs) liée à l’écho de l'émetteur ultrason.
 </p>
 <p align="center"><img  src="http://www.eng.uwaterloo.ca/%7Eck2lee/style/SRF08.jpg" width="25%" height="25%" alt=""></p>
@@ -70,8 +70,9 @@ valeur de la distance en "<strong>cm</strong>", en "inch" ou sous la forme d'une
 	<li><strong>RAM</strong> : 100 KB (164+)*.</li>
 	<li><strong>Flash</strong> : 384 KB (1408KB)*.</li>
 	<li><strong>Port Ethernet : </strong> 10Mbps (Wifi:802.11b/g/n)*.</li>
-	<li><strong>E/S numériques</strong> : 14</li>
+	<li><strong>E/S numériques</strong> : 22</li>
 	<li><strong>Entrées analogiques</strong> : 6</li>
+	<li><strong>Stockage</strong>: carte µSD</li>
 	<li><strong>IDE</strong> : Microsoft Visual Studio</li>
 	<li><strong>Framework</strong> : .NETMF 4.3</li>
 	<li><strong>Langages de programmation</strong> : C#, VB</li>
@@ -84,7 +85,7 @@ valeur de la distance en "<strong>cm</strong>", en "inch" ou sous la forme d'une
 	</tr>
 	<tr>
 		<td align="center"><strong>Netduino + 2</strong></td>
-		<td  align="center"><strong>Netduino 3 wifi*</strong></td>
+		<td  align="center"><strong>Netduino 3 wifi* (compatible Gadgeteer)</strong></td>
 	</tr>
 </table>
 
@@ -94,15 +95,19 @@ valeur de la distance en "<strong>cm</strong>", en "inch" ou sous la forme d'une
 <strong>Sites à consulter</strong>: <a href="http://netduino.com/netduinoplus2/specs.htm" target="_blank">Netduino</a>, <a href="http://www.netmf.com/" target="_blank">NETMF</a>
 </li>
 <li>
-<strong>Distributeurs</strong> : <a href="http://www.robotshop.com/en/catalogsearch/result/?q=netduino&order=stats_sales_order_count&dir=desc" target="_blank">RobotShop</a>, <a href="http://www.mouser.fr/Search/Refine.aspx?Keyword=netduino" target="_blank">Mouser Electronics</a>
+<strong>Distributeurs</strong> : <a href="http://www.mouser.fr/Search/Refine.aspx?Keyword=netduino" target="_blank">Mouser Electronics</a>
 </li>
 </ul>
 <hr>
 <h3>Classe SRF08</h3>
+<ul>
+	<li><strong>Rôle: </strong>Contrôle un télémètre à ultrasons SRF08 via un bus I²C.</li>
+        <li><strong>Espace de noms: </strong>ToolBoxes</li>
+	<li><strong>Assembly: </strong>SRF08</li>
+</ul>
 <hr>
-<p><strong>Contenu du dossier à télécharger</strong></p>
-<hr>
-<p> Le dossier à télécharger (au format zip ou tar.gz) contient le répertoire de la solution <strong>NetduinoSRF08</strong> composée : </p>
+<p><strong>Contenu du répertoire à télécharger</strong></p>
+<p> Le répertoire à télécharger (au format zip ou tar.gz) contient la solution <strong>NetduinoSRF08</strong> composée : </p>
 <ul>
 	<li>Du projet <strong>SRF08 </strong>: code de la classe <em>SRF08</em>.</li>
 	<li>Du projet <strong>TestSRF08 </strong>: un exemple d'utilisation de cette classe.</li>
@@ -111,7 +116,7 @@ valeur de la distance en "<strong>cm</strong>", en "inch" ou sous la forme d'une
 <p><strong>Utilisation</strong></p>
 <hr>
 <ol>
-	<li><strong>Ajouter</strong> la référence<strong> SRF08 </strong>et l'espace de nom <strong>ToolBoxes </strong>dans le projet.</li>
+	<<li><strong>Ajouter</strong> l'(es) assembly(s) dans le répertoire <em>référence</em> du projet et l'espace de noms <strong>ToolBoxes </strong>dans l'en-tête du fichier source.</li>
 	<li><strong>Créer</strong> un objet en utilisant un des constructeurs SRF08.</li>
 	<li><strong>Utiliser</strong> la méthode <strong>ReadRange</strong> pour déclencher et lire la distance en une seule opération.</li>
 </ol>
