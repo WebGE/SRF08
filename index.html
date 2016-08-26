@@ -98,6 +98,11 @@ valeur de la distance en "<strong>cm</strong>", en "inch" ou sous la forme d'une
 </li>
 </ul>
 <hr>
+<h3>Wiki</h3>
+<ul>
+	<li><strong>Netduino sur Wikispaces: <a href="https://csharpembarquenetduino.wikispaces.com/" target="_blank">lien</a></strong></li>
+</ul>
+<hr>
 <h3>Classe SRF08</h3>
 <ul>
 	<li><strong>Rôle: </strong>Contrôle un télémètre à ultrasons SRF08 via un bus I²C.</li>
@@ -198,8 +203,8 @@ valeur de la distance en "<strong>cm</strong>", en "inch" ou sous la forme d'une
 	  <td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_property_VS.png"></td>
 	<td><strong>Mode</strong></td>
 	  <td>Retourne sous la forme d'une chaîne de caractères le mode de fonctionnement du module:<br/>
-	    <strong>- Ranging: </strong>??<br/>
-	    <strong>- ANN: </strong>??<br/>
+	    <strong>- Ranging: </strong><br/>
+	    <strong>- ANN: </strong><br/>
 	  </td>
 	</tr>
 	<tr>
@@ -208,7 +213,7 @@ valeur de la distance en "<strong>cm</strong>", en "inch" ou sous la forme d'une
 	  <td>Retourne le numéro de version du logiciel du module SRF08. Octet non signé.</td>
 	</tr>
 </table>
-<p><strong>Méthodes publiques</strong></p>
+<p><strong>Méthodes</strong></p>
 <table>
 <tr>
 	<td></td>
@@ -219,7 +224,7 @@ valeur de la distance en "<strong>cm</strong>", en "inch" ou sous la forme d'une
 	<td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_method_VS.png"></td>
 	<td><strong>UInt16 ReadRange</strong>(<strong>MeasuringUnits</strong> <em>units</em>)</td>
 	<td>
-		<p>Déclenche la mesure de distance et renvoie le résultat de la mesure sous la forme d'un entier sur 16 bits dans le format demandé.</p>
+		<p>Déclenche la mesure de distance et renvoie le résultat sous la forme d'un entier non signé sur 16 bits dans le format demandé.</p>
 		<p> Remarque: La méthode effectue une mesure en 75ms</p>
 		<p><em>units</em>: unité du résultat de la mesure (centimètres, inches, microsecondes).</p>
 	</td>
