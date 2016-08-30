@@ -1,9 +1,12 @@
 SRF08
 =====
 
-Tags: SRF08, Ultra sonic range finder, Netduino, Netduino plus 2, Secretlabs, C#, Visual Studio.
+Tags: I²C, SRF08, Ultra sonic range finder, Netduino, Secretlabs, C#, Visual Studio.
 
-Target: Netduino plus 2.
+Target: Netduino plus 2, Netduino 3.
 
-This library can be use to control the SRF08 driver with Netduino+ V2. 
-Code written in C# with Visual Studio 2010. Example test program.
+This library can be use to control the <a href="http://www.lextronic.fr/P1764-telemetre-ultrason-srf08.html" target="_blank">SRF08</a> Ultra sonic range finder with Netduino. 
+
+Code written in C# with Visual Studio 2013. 
+
+NetduinoSRF08: Example test program.
