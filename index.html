@@ -20,7 +20,8 @@
 			<a id="forkme_banner" href="https://github.com/WebGE/SRF08">View on GitHub</a>
 
 			<h1 id="project_title">Télémètre à ultrasons I²C (SRF08)</h1>
-			<h2 id="project_tagline">Description de la classe <strong><em>SRF08</em></strong> développée en C# pour une Netduino plus 2 ou Netduino 3.</h2>
+			<h2 id="project_tagline">Description de la classe <strong><em>SRF08</em></strong> développée en C# sous .NETMF 4.3 pour les cartes Netduino et
+				FEZ (PANDA, COBRA...)</h2>
 
 			<section id="downloads">
 				<a class="zip_download_link" href="https://github.com/WebGE/SRF08/zipball/master">Download this project as a .zip file</a>
@@ -33,7 +34,28 @@
 	<div id="main_content_wrap" class="outer">
 		<section id="main_content" class="inner">
 			<hr>
-			<h3>Le télémètre à ultrasons "SRF08"</h3>
+			<h4>Sommaire</h4>
+			<ol>
+				<li>LE MATERIEL
+					<ol>
+						<li>Devantech SRF08 UltraSonic Ranger </li>
+						<li><a href="#DUINO">Les cartes Netduino</a></li>
+						<li><a href="#FEZ">Les cartes FEZ</a> </li>
+					</ol>
+				</li>
+				<li><a href="#LOG">LE LOGICIEL</a>
+					<ol>
+						<li><a href="#REP">Contenu du répertoire proposé au téléchargement</a></li>
+						<li><a href="#NUGET">Le NuGet MicroToolsKit</a></li>
+						<li><a href="#WIKI">Les Wikis</a></li>
+						<li><a href="#DESC">Description et utilisation de la classe SRF08</a></li>
+					</ol>
+				</li>
+			</ol>
+			<hr>
+			<h3>1. LE MATERIEL</h3>
+			<hr>
+			<h4>1.1 Devantech SRF08 UltraSonic Ranger </h4>
 			<hr>
 			<ul>
 				<li><strong>Présentation</strong></li>
@@ -64,19 +86,53 @@
 					<strong>Distributeur</strong> : <a href="http://www.lextronic.fr/P1764-telemetre-ultrason-srf08.html" target="_blank">Lextronic</a>
 				</li>
 			</ul>
-			<hr/>
-			<h3>
-				<a name="carte-netduino-de-secret-labs" class="anchor" href="#carte-netduino-de-secret-labs" target="_blank"><span class="octicon octicon-link"></span></a>Les
-				cartes Netduino</h3>
+			<hr>
+			<h4 id="DUINO">1.2 Les cartes Netduino</h4>
 			<h5>Secret Labs</h5>
 			<hr>
 			<ul>
 				<li><strong>Microcontrôleur</strong> : STM32F405RG 32 bits à architecture Cortex-M4 cadencé à 168 MHz.</li>
-				<li><strong>RAM</strong> : 100 KB (164+)*.</li>
-				<li><strong>Flash</strong> : 384 KB (1408KB)*.</li>
-				<li><strong>Port Ethernet : </strong> 10Mbps (Wifi:802.11b/g/n)*.</li>
+				<li><strong>RAM</strong> : 164KB+.</li>
+				<li><strong>Flash</strong> : 1408KB.</li>
+				<li><strong>Port Ethernet : </strong> 10/100Mbps (Wifi:802.11b/g/n)*.</li>
 				<li><strong>E/S numériques</strong> : 22</li>
 				<li><strong>Entrées analogiques</strong> : 6</li>
+				<li><strong>Stockage</strong>: carte µSD</li>
+				<li><strong>IDE</strong> : Microsoft Visual Studio</li>
+				<li><strong>Framework</strong> : .NETMF 4.3</li>
+				<li><strong>Langages de programmation</strong> : C#, VB</li>
+				<li><strong>Compatibilité</strong> : shield Arduino, Gadgeteer</li>
+			</ul>
+			<table>
+				<tr>
+					<td><img src="images/netduino3ethernet.png" alt="Netduino plus 2" target="_blank" /></td>
+					<td><img src="images/inputandoutput.png" alt="Netduino 3 wifi" target="_blank" /></td>
+				</tr>
+				<tr>
+					<td align="center"><strong>Netduino 3 Ethernet</strong></td>
+					<td align="center"><strong>Netduino 3 wifi*</strong></td>
+				</tr>
+			</table>
+			<ul>
+				<li><strong>Sites à consulter</strong> : <a href="http://netduino.com/netduinoplus2/specs.htm" target="_blank">Netduino</a>,
+					<a href="http://www.netmf.com/" target="_blank">NETMF</a></li>
+				<li><strong>Distributeurs</strong> : <a href="http://www.mouser.fr/Search/Refine.aspx?Keyword=netduino" target="_blank">Mouser Electronics</a></li>
+			</ul>
+			<hr>
+
+			<h4 id="FEZ">1.3 Les cartes FEZ</h4>
+			<h5>GHI Electonics (Extrait)</h5>
+			<hr>
+			<ul>
+				<li><strong>Microcontrôleur</strong> : 180 MHz 32-bit ARM Cortex-M4.(120 MHz 32-bit ARM Cortex-M3 )*</li>
+				<li><strong>SoC(SoM)*</strong> : <a href="https://www.ghielectronics.com/catalog/product/501" target="_blank">G80</a>
+					<a href="https://www.ghielectronics.com/catalog/product/373" target="_blank">G120*</a>
+				</li>
+				<li><strong>RAM</strong> : 156 KB(2.87 MB)*.</li>
+				<li><strong>Flash</strong> : 256 KB (13.67 MB)*.</li>
+				<li><strong>E/S numériques</strong> : 53(60)*</li>
+				<li><strong>Entrées analogiques</strong> : 16(8)*</li>
+				<li><strong>Réseaux : </strong> Ethernet TCP/IP, WiFi, and SSL.</li>
 				<li><strong>Stockage</strong>: carte µSD</li>
 				<li><strong>IDE</strong> : Microsoft Visual Studio</li>
 				<li><strong>Framework</strong> : .NETMF 4.3</li>
@@ -85,178 +141,198 @@
 
 			<table>
 				<tr>
-					<td><img src="http://www.mouser.com/images/microsites/Netduino_Plus_2.jpg" alt="Netduino plus 2" /></td>
-					<td><img src="http://static.netduino.com/images/netduino3wifi/specs/inputandoutput.jpg" alt="Netduino 3 wifi" /></td>
+					<td><img src="images/panda3.png" alt="PANDA III" /></td>
+					<td><img src="images/cobra3.png" alt="COBRA III" /></td>
 				</tr>
 				<tr>
-					<td align="center"><strong>Netduino + 2</strong></td>
-					<td align="center"><strong>Netduino 3 wifi* (compatible Gadgeteer)</strong></td>
+					<td align="center"><strong>PANDA III</strong></td>
+					<td align="center"><strong>COBRA III* (compatible Gadgeteer)</strong></td>
 				</tr>
 			</table>
 
 			<ul>
-				<li>
-					<strong>Sites à consulter</strong>: <a href="http://netduino.com/netduinoplus2/specs.htm" target="_blank">Netduino</a>,
-					<a href="http://www.netmf.com/" target="_blank">NETMF</a>
-				</li>
-				<li>
-					<strong>Distributeurs</strong> : <a href="http://www.mouser.fr/Search/Refine.aspx?Keyword=netduino" target="_blank">Mouser Electronics</a>
-				</li>
+				<li><strong>Sites à consulter</strong> : <a href="https://www.ghielectronics.com/" target="_blank">GHI ELECTRONICS</a>,
+					<a href="http://www.netmf.com/" target="_blank">NETMF</a></li>
+				<li><strong>Distributeurs</strong> : <a href="http://www.mouser.fr" target="_blank">Mouser Electronics</a></li>
 			</ul>
+
 			<hr>
-			<h3>Wiki</h3>
-			<ul>
-				<li><strong>Exemples pour la carte Netduino sur Wikispaces: <a href="https://csharpembarquenetduino.wikispaces.com/" target="_blank">lien</a></strong></li>
-			</ul>
+			<h3 id="LOG">2. LE LOGICIEL</h3>
 			<hr>
-			<h3>Contenu du répertoire proposé au téléchargement</h3>
+
+			<h4 id="REP">2.1 Contenu du répertoire proposé au téléchargement</h4>
+			<hr>
 			<p>Le répertoire proposé au téléchargement (au format zip ou tar.gz) contient la solution <strong>NetduinoSRF08</strong>				composée:</p>
 			<ul>
 				<li>Du projet <strong>SRF08 </strong>: le <strong>code source</strong> de la classe <em>SRF08</em>.</li>
 				<li>Du projet <strong>TestSRF08 </strong>: un exemple d'utilisation de cette classe.</li>
 			</ul>
-			<p><em>Remarques : La dernière version <strong>compilée</strong> de la classe <strong>SRF08</strong> se situe dans la bibliothèque <strong>MicroToolsKit</strong> disponible sur <a href="https://www.nuget.org/packages/WebGE.MicroToolsKit/" target="_blank">nuget.org</a>.</em></p>
+
+			<hr>
+			<h4 id="NUGET">2.2 Le NuGet MicroToolsKit</h4>
+			<p>La dernière version <strong>compilée</strong> de la classe <strong>SRF08</strong> se situe dans la bibliothèque <strong>MicroToolsKit</strong>				disponible sur <a href="https://www.nuget.org/packages/WebGE.MicroToolsKit/" target="_blank">nuget.org</a>.</p>
 			<p align="center"><img src="images/NuGet-large.png" /></p>
+			<p><strong>Organisation des classes</strong> contenues dans MicroToolsKit
+				<a href="https://csharpembarquenetduino.wikispaces.com/6.+La+biblioth%C3%A8que+MicroToolsKit"
+					target="_blank">[lien]</a>
+			</p>
 			<p><em>Installer cette bibliothèque dans le projet simplifie l'utilisation de cette classe.</em></p>
 			<hr>
-			<h3>Description et utilisation de la classe SRF08</h3>
+
+			<h4 id="WIKI">2.3 Les Wikis</h4>
 			<ul>
-				<li><strong>Rôle: </strong>Contrôler un télémètre à ultrasons SRF08 via un bus I²C.</li>
-				<li><strong>Assembly: </strong> <em>MicroToolsKit</em> (disponible sur <a href="https://www.nuget.org/packages/WebGE.MicroToolsKit/" target="_blank">nuget.org</a>)</li>
-				<li><strong>Espace de noms: </strong><em>Microtoolskit.Hardware.Sensors</em></li>
+				<li><strong>Fascicules</strong> d'exemples de code pour les cartes <strong>Netduino</strong>.
+					<a href="https://csharpembarquenetduino.wikispaces.com/5.+Les+fascicules+d%27exemples+cod%C3%A9s+en+CSharp"
+						target="_blank">[lien]</a>
+				</li>
+				<li><strong>Fascicule</strong> d'exemples de code pour les cartes <strong>FEZ</strong>.
+					<a href="https://csharpembarquefez.wikispaces.com/5.+Les+fascicules+d%27exemples+cod%C3%A9s+en+CSharp"
+						target="_blank">[lien]</a>
+				</li>
 			</ul>
-
 			<hr>
-			<p><strong>Création d'un projet avec l'IDE Visual Studio</strong></p>
-			<ol>
-				<li><strong>Utiliser</strong> le gestionnaire de paquets NuGet pour <strong>ajouter</strong> l'assembly <strong>MicroToolsKit</strong>					(disponible sur <a href="https://www.nuget.org/packages/WebGE.MicroToolsKit/" target="_blank">nuget.org</a>) dans le répertoire <em>Références</em>					du projet.(clic droit sur <em>Références</em> puis <em>Gérer les packages NuGet...</em>)</li>
-				<li><strong>Ajouter</strong> l'espace de noms <strong>Microtoolskit.Hardware.Sensors</strong> dans l'en-tête du fichier source.</li>
-				<li><strong>Créer</strong> un objet en utilisant un des constructeurs SRF08.</li>
-				<li><strong>Utiliser</strong> la méthode <strong>ReadRange</strong> pour déclencher et lire la distance en une seule opération.</li>
-			</ol>
-			<hr>
-			<p><strong>Constructeurs</strong></p>
-			<table>
-				<tr>
-					<td></td>
-					<td><strong>Syntaxe</strong></td>
-					<td><strong>Description</strong></td>
-				</tr>
-				<tr>
-					<td><img src="images/Method_16x.png"></td>
-					<td><strong>SRF08</strong>()</td>
-					<td>Instancie un objet "SRF08" avec les paramètres : <br/> Adresse <strong>SLA</strong> du module = 0x70 <br/> Fréquence
-						du bus: 100kHz</td>
-				</tr>
-				<tr>
-					<td><img src="images/Method_16x.png"></td>
-					<td><strong>SRF08</strong>(<strong>byte</strong> <em>I2C_Add_7bits</em>)</td>
-					<td>Instancie un objet "SRF08". <br> <em>I2C_Add_7bits</em> est l'adresse I2C sur 7 bits attribuée au module. Elle doit
-						être comprise entre 0x70 et 0x7F <br/> Fréquence du bus: 100kHz.</td>
-				</tr>
-				<tr>
-					<td><img src="images/Method_16x.png"></td>
-					<td><strong>SRF08</strong>(<strong>byte</strong> <em>I2C_Add_7bits</em>, <strong>UInt16</strong> <em>FreqBusI2C</em>)</td>
-					<td>Instancie un objet "SRF08". <br/>
-						<em>I2C_Add_7bits</em> est l'adresse I2C sur 7 bits attribuée au module. Elle doit être comprise entre 0x70 et 0x7F.
-						<br/>
-						<em>FreqBusI2C </em> est à définir dans l'intervalle [100kHz,400kHz].
-					</td>
-				</tr>
-			</table>
 
-			<p><strong>Enumérations</strong></p>
-			<table>
-				<tr>
-					<td></td>
-					<td><strong>Syntaxe</strong></td>
-					<td><strong>Description</strong></td>
-				</tr>
-				<tr>
-					<td><img src="images/Enumerator_16x.png"></td>
-					<td><strong>MeasuringUnits</strong></td>
-					<td>
-						<p>Mode "Ranging"</p>
-						<em>inches_InRangingMode</em>: résultat de la mesure en inches<br/>
-						<em>centimeters_InRangingMode</em>: résultat de la mesure en centimètres<br/>
-						<em>microseconds_InRangingMode</em>: résultat de la mesure en microsecondes<br/>
-						<p>Mode "ANN"</p>
-						<em>inches_InANNMode</em>: résultat de la mesure en inches<br/>
-						<em>centimeters_InANNMode</em>: résultat de la mesure en centimètres<br/>
-						<em>microseconds_InANNMode</em>: résultat de la mesure en microsecondes<br/>
-					</td>
-				</tr>
+			<h4 id="DESC">2.4 Description et utilisation de la classe SRF08</h4>
+					<ul>
+						<li><strong>Rôle: </strong>Contrôler un télémètre à ultrasons SRF08 via un bus I²C.</li>
+						<li><strong>Assembly: </strong> <em>MicroToolsKit</em> (disponible sur
+							<a href="https://www.nuget.org/packages/WebGE.MicroToolsKit/" target="_blank">nuget.org</a>)</li>
+						<li><strong>Espace de noms: </strong><em>Microtoolskit.Hardware.Sensors</em></li>
+					</ul>
 
-			</table>
-			<p><strong>Propriétés</strong></p>
-			<table>
-				<tr>
-					<td></td>
-					<td><strong>Syntaxe</strong></td>
-					<td><strong>Description</strong></td>
-				</tr>
-				<tr>
-					<td><img src="images/Property_20x.png"></td>
-					<td><strong>FirstEchoHighByte</strong></td>
-					<td>Retourne l'octet de poids fort du mot représentatif de la réception du premier écho.<br/>
-					</td>
-				</tr>
-				<tr>
-					<td><img src="images/Property_20x.png"></td>
-					<td><strong>FirstEchoLowByte</strong></td>
-					<td>Retourne l'octet de poids faible du mot représentatif de la réception du premier écho.<br/>
-					</td>
-				</tr>
-				<tr>
-					<td><img src="images/Property_20x.png"></td>
-					<td><strong>LightSensor</strong></td>
-					<td>Retourne un octet représentatif de la luminosité mesurée par la LDR.</td>
-				</tr>
+					<hr>
+					<p><strong>Création d'un projet avec l'IDE Visual Studio</strong></p>
+					<ol>
+						<li><strong>Utiliser</strong> le gestionnaire de paquets NuGet pour <strong>ajouter</strong> l'assembly <strong>MicroToolsKit</strong>							(disponible sur <a href="https://www.nuget.org/packages/WebGE.MicroToolsKit/" target="_blank">nuget.org</a>) dans
+							le répertoire <em>Références</em> du projet.(clic droit sur <em>Références</em> puis <em>Gérer les packages NuGet...</em>)</li>
+						<li><strong>Ajouter</strong> l'espace de noms <strong>Microtoolskit.Hardware.Sensors</strong> dans l'en-tête du fichier
+							source.</li>
+						<li><strong>Créer</strong> un objet en utilisant un des constructeurs SRF08.</li>
+						<li><strong>Utiliser</strong> la méthode <strong>ReadRange</strong> pour déclencher et lire la distance en une seule opération.</li>
+					</ol>
+					<hr>
+					<p><strong>Constructeurs</strong></p>
+					<table>
+						<tr>
+							<td></td>
+							<td><strong>Syntaxe</strong></td>
+							<td><strong>Description</strong></td>
+						</tr>
+						<tr>
+							<td><img src="images/Method_16x.png"></td>
+							<td><strong>SRF08</strong>()</td>
+							<td>Instancie un objet "SRF08" avec les paramètres : <br/> Adresse <strong>SLA</strong> du module = 0x70 <br/> Fréquence
+								du bus: 100kHz</td>
+						</tr>
+						<tr>
+							<td><img src="images/Method_16x.png"></td>
+							<td><strong>SRF08</strong>(<strong>byte</strong> <em>I2C_Add_7bits</em>)</td>
+							<td>Instancie un objet "SRF08". <br> <em>I2C_Add_7bits</em> est l'adresse I2C sur 7 bits attribuée au module. Elle doit
+								être comprise entre 0x70 et 0x7F <br/> Fréquence du bus: 100kHz.</td>
+						</tr>
+						<tr>
+							<td><img src="images/Method_16x.png"></td>
+							<td><strong>SRF08</strong>(<strong>byte</strong> <em>I2C_Add_7bits</em>, <strong>UInt16</strong> <em>FreqBusI2C</em>)</td>
+							<td>Instancie un objet "SRF08". <br/>
+								<em>I2C_Add_7bits</em> est l'adresse I2C sur 7 bits attribuée au module. Elle doit être comprise entre 0x70 et 0x7F.
+								<br/>
+								<em>FreqBusI2C </em> est à définir dans l'intervalle [100kHz,400kHz].
+							</td>
+						</tr>
+					</table>
 
-				<tr>
-					<td><img src="images/Property_20x.png"></td>
-					<td><strong>Mode</strong></td>
-					<td>Retourne sous la forme d'une chaîne de caractères le mode de fonctionnement du module:<br/>
-						<strong>- Ranging</strong><br/>
-						<strong>- ANN</strong><br/>
-					</td>
-				</tr>
-				<tr>
-					<td><img src="images/Property_20x.png"></td>
-					<td><strong>VerSoft</strong></td>
-					<td>Retourne le numéro de version du logiciel du module SRF08. Octet non signé.</td>
-				</tr>
-			</table>
-			<p><strong>Méthodes</strong></p>
-			<table>
-				<tr>
-					<td></td>
-					<td><strong>Syntaxe</strong></td>
-					<td><strong>Description</strong></td>
-				</tr>
-				<tr>
-					<td><img src="images/Method_16x.png"></td>
-					<td><strong>UInt16 ReadRange</strong>(<strong>MeasuringUnits</strong> <em>units</em>)</td>
-					<td>
-						<p>Déclenche la mesure de distance et renvoie le résultat sous la forme d'un entier non signé sur 16 bits dans le format
-							demandé.
-						</p>
-						<p> Remarque: La méthode effectue une mesure en 75ms</p>
-						<p><em>units</em>: unité du résultat de la mesure (centimètres, inches, microsecondes).</p>
-					</td>
-				</tr>
-				<tr>
-					<td><img src="images/Method_16x.png"></td>
-					<td><strong>void TrigShotUS</strong>(<strong>MeasuringUnits</strong> <em>units</em>))</td>
-					<td>
-						<p>Déclenche la mesure de distance.</p>
-						<p> Le temps d'attente et la lecture du registre contenant le résultat de la mesure sont à la charge du programmeur.</p>
-						<p><em>units</em>: unité du résultat de la mesure (centimètres, inches, microsecondes).</p>
-					</td>
-				</tr>
+					<p><strong>Enumérations</strong></p>
+					<table>
+						<tr>
+							<td></td>
+							<td><strong>Syntaxe</strong></td>
+							<td><strong>Description</strong></td>
+						</tr>
+						<tr>
+							<td><img src="images/Enumerator_16x.png"></td>
+							<td><strong>MeasuringUnits</strong></td>
+							<td>
+								<p>Mode "Ranging"</p>
+								<em>inches_InRangingMode</em>: résultat de la mesure en inches<br/>
+								<em>centimeters_InRangingMode</em>: résultat de la mesure en centimètres<br/>
+								<em>microseconds_InRangingMode</em>: résultat de la mesure en microsecondes<br/>
+								<p>Mode "ANN"</p>
+								<em>inches_InANNMode</em>: résultat de la mesure en inches<br/>
+								<em>centimeters_InANNMode</em>: résultat de la mesure en centimètres<br/>
+								<em>microseconds_InANNMode</em>: résultat de la mesure en microsecondes<br/>
+							</td>
+						</tr>
+
+					</table>
+					<p><strong>Propriétés</strong></p>
+					<table>
+						<tr>
+							<td></td>
+							<td><strong>Syntaxe</strong></td>
+							<td><strong>Description</strong></td>
+						</tr>
+						<tr>
+							<td><img src="images/Property_20x.png"></td>
+							<td><strong>FirstEchoHighByte</strong></td>
+							<td>Retourne l'octet de poids fort du mot représentatif de la réception du premier écho.<br/>
+							</td>
+						</tr>
+						<tr>
+							<td><img src="images/Property_20x.png"></td>
+							<td><strong>FirstEchoLowByte</strong></td>
+							<td>Retourne l'octet de poids faible du mot représentatif de la réception du premier écho.<br/>
+							</td>
+						</tr>
+						<tr>
+							<td><img src="images/Property_20x.png"></td>
+							<td><strong>LightSensor</strong></td>
+							<td>Retourne un octet représentatif de la luminosité mesurée par la LDR.</td>
+						</tr>
+
+						<tr>
+							<td><img src="images/Property_20x.png"></td>
+							<td><strong>Mode</strong></td>
+							<td>Retourne sous la forme d'une chaîne de caractères le mode de fonctionnement du module:<br/>
+								<strong>- Ranging</strong><br/>
+								<strong>- ANN</strong><br/>
+							</td>
+						</tr>
+						<tr>
+							<td><img src="images/Property_20x.png"></td>
+							<td><strong>VerSoft</strong></td>
+							<td>Retourne le numéro de version du logiciel du module SRF08. Octet non signé.</td>
+						</tr>
+					</table>
+					<p><strong>Méthodes</strong></p>
+					<table>
+						<tr>
+							<td></td>
+							<td><strong>Syntaxe</strong></td>
+							<td><strong>Description</strong></td>
+						</tr>
+						<tr>
+							<td><img src="images/Method_16x.png"></td>
+							<td><strong>UInt16 ReadRange</strong>(<strong>MeasuringUnits</strong> <em>units</em>)</td>
+							<td>
+								<p>Déclenche la mesure de distance et renvoie le résultat sous la forme d'un entier non signé sur 16 bits dans le format
+									demandé.
+								</p>
+								<p> Remarque: La méthode effectue une mesure en 75ms</p>
+								<p><em>units</em>: unité du résultat de la mesure (centimètres, inches, microsecondes).</p>
+							</td>
+						</tr>
+						<tr>
+							<td><img src="images/Method_16x.png"></td>
+							<td><strong>void TrigShotUS</strong>(<strong>MeasuringUnits</strong> <em>units</em>))</td>
+							<td>
+								<p>Déclenche la mesure de distance.</p>
+								<p> Le temps d'attente et la lecture du registre contenant le résultat de la mesure sont à la charge du programmeur.</p>
+								<p><em>units</em>: unité du résultat de la mesure (centimètres, inches, microsecondes).</p>
+							</td>
+						</tr>
 
 
-			</table>
+					</table>
 
 		</section>
 	</div>
@@ -264,7 +340,8 @@
 	<!-- FOOTER  -->
 	<div id="footer_wrap" class="outer">
 		<footer class="inner">
-			<p class="copyright">Mesurer une distance avec un télémètre à ultrasons SRF08 maintained by <a href="https://github.com/WebGE">WebGE</a></p>
+			<p class="copyright">Description de la classe <strong><em>SRF08</em></strong> développée en C# sous .NETMF 4.3 pour les cartes Netduino et
+				FEZ (PANDA, COBRA...) maintained by <a href="https://github.com/WebGE">WebGE</a></p>
 			<p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
 		</footer>
 	</div>
