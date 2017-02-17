@@ -15,7 +15,7 @@ This class is for a <strong>Devantech SRF08 UltraSonic Ranger</strong>.
 
 <strong>Framework</strong> : .NETMF 4.3
 
-
+<hr>
 See <a href="http://webge.github.io/SRF08/" target="_blank">SRF08 GitHub Pages</a> too get started.
 
 Maintened by <a href="mailto:philippemariano@gmail.com">Philippe Mariano</a>
