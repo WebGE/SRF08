@@ -1,12 +1,21 @@
 SRF08
 =====
 
-Tags: I²C, SRF08, Ultra sonic range finder, Netduino, Secretlabs, C#, Visual Studio.
+Source code of the SRF08 NETMF class contained in the <a href="https://www.nuget.org/packages/WEBGE.Microtoolskit/" target="_blank">MicroToolsKit</a> library. Download at <a href="https://www.nuget.org" target="_blank">nuget.com</a>
 
-Target: Netduino plus 2, Netduino 3.
+This class is for a <strong>Devantech SRF08 UltraSonic Ranger</strong>.
 
-This library can be use to control the <a href="http://www.lextronic.fr/P1764-telemetre-ultrason-srf08.html" target="_blank">SRF08</a> Ultra sonic range finder with Netduino. 
+<strong>Tags</strong>: I²C Bus, Ultra sonic range finder, Netduino, FEZ, PANDA, COBRA, C#, NETMF, Visual Studio.
 
-Code written in C# with Visual Studio 2013. 
+<strong>Target</strong>: Netduino, Netduino plus 2, Netduino 3, FEZ PANDA 3 et COBRA 3.
 
-NetduinoSRF08: Example test program.
+<strong>IDE</strong> : Visual Studio Community.
+
+<strong>Language</strong> : C#.
+
+<strong>Framework</strong> : .NETMF 4.3
+
+
+See <a href="http://webge.github.io/SRF08/" target="_blank">SRF08 GitHub Pages</a> too get started.
+
+Maintened by <a href="mailto:philippemariano@gmail.com">Philippe Mariano</a>
