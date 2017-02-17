@@ -1,7 +1,7 @@
 SRF08
 =====
 
-Source code of the SRF08 NETMF class contained in the <a href="https://www.nuget.org/packages/WEBGE.Microtoolskit/" target="_blank">MicroToolsKit</a> library. Download at <a href="https://www.nuget.org" target="_blank">nuget.com</a>
+Source code of the SRF08 <strong>NETMF class</strong> contained in the <a href="https://www.nuget.org/packages/WEBGE.Microtoolskit/" target="_blank">MicroToolsKit</a> <strong>library</strong>. Download at <a href="https://www.nuget.org" target="_blank">nuget.com</a>
 
 This class is for a <strong>Devantech SRF08 UltraSonic Ranger</strong>.
 
