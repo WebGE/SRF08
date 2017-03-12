@@ -18,4 +18,4 @@ This class is for a <strong>Devantech SRF08 UltraSonic Ranger</strong>.
 <hr>
 See <a href="http://webge.github.io/SRF08/" target="_blank">SRF08 GitHub Pages</a> too get started.
 
-Maintened by <a href="mailto:philippemariano@gmail.com">WebGE/a>
+Maintened by <a href="mailto:philippemariano@gmail.com">WebGE</a>
