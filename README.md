@@ -1,19 +1,45 @@
-SRF08
-=====
+# SRF08
 
-Source code of the SRF08 <strong>NETMF class</strong> contained in the <a href="https://www.nuget.org/packages/WEBGE.Microtoolskit/" target="_blank">MicroToolsKit</a> <strong>library</strong>. Download at <a href="https://www.nuget.org" target="_blank">nuget.com</a>
+<strong>Description</strong>
+-------------------------------------
+Source code.
 
-This class is for a <strong>Devantech SRF08 UltraSonic Ranger</strong>.
+A <strong>.NETMF v4.3 class</strong> write for a SRF08 circuit : <strong>Devantech SRF08 UltraSonic Ranger</strong>. 
 
-<strong>Tags</strong>: I²C Bus, Ultra sonic range finder, Netduino, FEZ, PANDA, COBRA, C#, NETMF, Visual Studio.
+This class is also in the <a href="https://www.nuget.org/packages/WEBGE.Microtoolskit/" target="_blank">MicroToolsKit</a> <strong>library</strong>. Download at <a href="https://www.nuget.org" target="_blank">nuget.com</a>
 
-<strong>Target</strong>: Netduino, Netduino plus 2, Netduino 3, FEZ PANDA 3 et COBRA 3.
+ <img src="img/nuget.JPG" align="center" />
 
-<strong>IDE</strong> : Visual Studio Community.
+<strong>Hardware</strong>
+---------------------
+<strong> Targets </strong>: Netduino, Netduino plus 2, Netduino 3, FEZ PANDA 3 et COBRA 3.
 
-<strong>Language</strong> : C#.
+<strong>Software</strong>
+---------------------
+<ul>
+<li><strong>Language</strong> : C#</li>
+<li><strong>Framework used</strong> : .NETMF 4.3</li>
+<li><strong>IDE</strong> : Visual Studio Community 2015</li>
+<li><strong>xml</strong> : documentation inside class </li> 
+<li><strong>Exception</strong> : if transaction failed</li>
+</ul>
 
-<strong>Framework</strong> : .NETMF 4.3
+<strong> Visual Studio solution</strong>
+-------------------------------------
+<ul>
+<li><strong>PCF8574</strong>
+<ul>
+<li><strong>PCF8574</strong> : .NetMF class</li>
+<img src="img/srf08.png" />
+<li><strong>Netduino</strong> : class test program for Netduino board</li>
+<li><strong>FezPanda</strong> : class test program for Fez Panda board</li>
+</ul>
+</li>
+</ul>
+
+<strong>Assembly</strong>
+--------------------------
+
 
 <hr>
 See <a href="http://webge.github.io/SRF08/" target="_blank">SRF08 GitHub Pages</a> too get started.
