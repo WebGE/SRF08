@@ -38,9 +38,35 @@ This class is also in the <a href="https://www.nuget.org/packages/WEBGE.Microtoo
 
 <strong>Assembly</strong>
 --------------------------
+To come up
 
+<strong>Video</strong>
+-------------------
+To come up
 
+<strong>Keywords</strong>
+----------------------------
+I²C Bus, UltraSonic, range finder, Netduino, FEZ, PANDA, COBRA, C#, NETMF, Visual Studio.
+
+<strong>Tested on</strong>
+-------------------
+Fez Panda III, Netduino plus 2
+
+<strong>Todo list</strong>
+-------------------
+Exception if transaction failed
+
+<strong>To get started</strong>
+--------------------
+See <a href="http://webge.github.io/SRF08/" target="_blank">SRF08 GitHub Pages</a> (in French).
+
+<strong>Wiki</strong>
+--------------------
+See <a href="https://csharpembarquenetduino.wikispaces.com/Home" target="_blank">Netduino et FEZ</a> (in French).
+
+<strong>Project site</strong>
+--------------------
+<a href ="https://csharpembarquenetduino.wikispaces.com/6.+MicroToolsKit+library">MicroToolsKit library</a> (in English).
 <hr>
-See <a href="http://webge.github.io/SRF08/" target="_blank">SRF08 GitHub Pages</a> too get started.
 
-Maintened by <a href="mailto:philippemariano@gmail.com">WebGE</a>
+<strong>Maintened by</strong> <a href="mailto:philippemariano@gmail.com">WebGe</a>
