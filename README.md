@@ -26,12 +26,12 @@ This class is also in the <a href="https://www.nuget.org/packages/WEBGE.Microtoo
 <strong> Visual Studio solution</strong>
 -------------------------------------
 <ul>
-<li><strong>PCF8574</strong>
+<li><strong>SRF08</strong>
 <ul>
-<li><strong>PCF8574</strong> : .NetMF class</li>
+<li><strong>SRF08</strong> : .NetMF class</li>
 <img src="img/srf08.png" />
-<li><strong>Netduino</strong> : class test program for Netduino board</li>
-<li><strong>FezPanda</strong> : class test program for Fez Panda board</li>
+<li><strong>Netduino</strong> : class test program for Netduino board (Todo)</li>
+<li><strong>FezPanda</strong> : class test program for Fez Panda board(Todo)</li>
 </ul>
 </li>
 </ul>
