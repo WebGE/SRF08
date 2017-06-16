@@ -4,7 +4,7 @@
 -------------------------------------
 Source code.
 
-A <strong>.NETMF v4.3 class</strong> write for a SRF08 circuit : <strong>Devantech SRF08 UltraSonic Ranger</strong>. 
+A <strong>.NETMF v4.3 class</strong> write for a SRF08 circuit : <strong>Devantech SRF08 UltraSonic range finder</strong>. 
 
 This class is also in the <a href="https://www.nuget.org/packages/WEBGE.Microtoolskit/" target="_blank">MicroToolsKit</a> <strong>library</strong>. Download at <a href="https://www.nuget.org" target="_blank">nuget.com</a>
 
