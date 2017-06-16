@@ -21,7 +21,6 @@ This class is also in the <a href="https://www.nuget.org/packages/WEBGE.Microtoo
 <li><strong>Framework used</strong> : .NETMF 4.3</li>
 <li><strong>IDE</strong> : Visual Studio Community 2015</li>
 <li><strong>xml</strong> : documentation inside class </li> 
-<li><strong>Exception</strong> : if transaction failed</li>
 </ul>
 
 <strong> Visual Studio solution</strong>
