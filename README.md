@@ -54,7 +54,7 @@ Fez Panda III, Netduino plus 2
 
 <strong>Todo list</strong>
 -------------------
-Exception if transaction failed
+Change i2c address
 
 <strong>To get started</strong>
 --------------------
