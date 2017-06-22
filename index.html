@@ -198,11 +198,7 @@
 				</li>
 			</ul>
 			<hr>
-			<strong>Exemple</strong><br>
-			<pre>
-
-			</pre>
-			<hr>
+			
 			<h4 id="DESC">2.4 Description et utilisation de la classe SRF08</h4>
 			<ul>
 				<li><strong>Rôle: </strong>Contrôler un télémètre à ultrasons SRF08 via un bus I²C.</li>
@@ -224,6 +220,29 @@
 				<li><strong>Créer</strong> un objet en utilisant un des constructeurs SRF08.</li>
 				<li><strong>Utiliser</strong> la méthode <strong>ReadRange</strong> pour déclencher et lire la distance en une seule opération.</li>
 			</ol>
+			<hr>
+			<strong>Exemple</strong><br>
+			<pre>
+using System.Threading;
+using Microtoolskit.Hardware.Displays;
+
+namespace FezPanda
+{
+    public class Program
+    {
+        public static void Main()
+        {
+			SRF08 I2CTelemeter = new SRF08();
+			
+			while(true)
+			{
+				Debug.Print("Distance: " + I2CTelemeter.ReadRange(SRF08.MeasuringUnits.centimeters_InRangingMode) + "cm");
+				Thread.Sleep(3000);
+			}
+		}
+	}
+}
+			</pre>
 			<hr>
 			<p><strong>Constructeurs</strong></p>
 			<table>
