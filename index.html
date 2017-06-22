@@ -241,12 +241,12 @@
 				<tr>
 					<td><img src="images/Method_16x.png"></td>
 					<td><strong>SRF08</strong>(<strong>byte</strong> <em>I2C_Add_7bits</em>)</td>
-					<td>Instancie un objet "SRF08". <br> <em>I2C_Add_7bits</em> est l'adresse I2C sur 7 bits attribuée au module. Elle doit
+					<td>Instancie un objet "SRF08". <br> <em>SLA</em> est l'adresse I2C sur 7 bits attribuée au module. Elle doit
 						être comprise entre 0x70 et 0x7F <br/> Fréquence du bus: 100kHz.</td>
 				</tr>
 				<tr>
 					<td><img src="images/Method_16x.png"></td>
-					<td><strong>SRF08</strong>(<strong>byte</strong> <em>I2C_Add_7bits</em>, <strong>UInt16</strong> <em>FreqBusI2C</em>)</td>
+					<td><strong>SRF08</strong>(<strong>byte</strong> <em>SLA</em>, <strong>UInt16</strong> <em>Frequency</em>)</td>
 					<td>Instancie un objet "SRF08". <br/>
 						<em>I2C_Add_7bits</em> est l'adresse I2C sur 7 bits attribuée au module. Elle doit être comprise entre 0x70 et 0x7F.
 						<br/>
@@ -337,7 +337,7 @@
 				</tr>
 				<tr>
 					<td><img src="images/Method_16x.png"></td>
-					<td><strong>void TrigShotUS</strong>(<strong>MeasuringUnits</strong> <em>units</em>))</td>
+					<td><strong>void TrigShotUS</strong>(<strong>MeasuringUnits</strong> <em>units</em>)</td>
 					<td>
 						<p>Déclenche la mesure de distance.</p>
 						<p> Le temps d'attente et la lecture du registre contenant le résultat de la mesure sont à la charge du programmeur.</p>
