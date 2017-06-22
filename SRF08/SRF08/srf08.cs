@@ -54,7 +54,7 @@ namespace testMicroToolsKit
                     }
                 }
                 /// <summary>
-                /// Get Slave Adress
+                /// Slave Adress Get Access
                 /// </summary>
                 public UInt16 SLA
                 {
@@ -70,25 +70,41 @@ namespace testMicroToolsKit
                 private enum Registers
                 {
                     /// <summary>
-                    /// 
+                    /// SRF08 software revision. Read only.
                     /// </summary>
                     SoftRev = 0,
                     /// <summary>
-                    /// 
+                    /// Command register is used to start a ranging session. Write only.
                     /// </summary>
                     Command = 0,
                     /// <summary>
-                    /// 
+                    /// This data is updated every time a new ranging command has completed and can be read when range data is read. Read only.
                     /// </summary>
-                    LightSensor,
+                    LightSensor = 1,
                     /// <summary>
-                    /// 
+                    /// Max Gain Register ((default 31). Write only
                     /// </summary>
-                    _1stEchoH,
+                    /// <remarks>
+                    /// 
+                    /// </remarks>
+                    Gain = 1,
                     /// <summary>
-                    /// 
+                    /// 8-bit high of  16-bit unsigned result from the latest ranging. Read only.
+                    /// The meaning of this value depends on the  command used, and is either the range in inches, 
+                    /// or the range in cm or the flight time in uS. A value of zero indicates that no objects were detected
                     /// </summary>
-                    _1stEchoL
+                    _1stEchoH = 2,
+                    /// <summary>
+                    /// Changing the range (default 255)
+                    /// </summary>
+                    /// <remarks>
+                    /// The range is ((Range Register x 43mm) + 43mm) 
+                    /// </remarks>
+                    Range = 2,
+                    /// <summary>
+                    ///  8-bit low of  16-bit unsigned result from the latest ranging
+                    /// </summary>
+                    _1stEchoL = 3
                 }
                 /// <summary>
                 /// SRF08 ranging Mode and Unity
@@ -96,37 +112,37 @@ namespace testMicroToolsKit
                 public enum MeasuringUnits
                 {
                     /// <summary>
-                    /// 
+                    /// Ranging Mode and result in inches
                     /// </summary>
                     inches_InRangingMode,
                     /// <summary>
-                    /// 
+                    /// Ranging Mode and result in centimeters
                     /// </summary>
                     centimeters_InRangingMode,
                     /// <summary>
-                    /// 
+                    /// Ranging Mode and result in microseconds
                     /// </summary>
                     microseconds_InRangingMode,
                     /// <summary>
-                    /// 
+                    /// ANN Mode and result in inches
                     /// </summary>
                     inches_InANNMode,
                     /// <summary>
-                    /// 
+                    /// ANN Mode and result in centimeters
                     /// </summary>
                     centimeters_InANNMode,
                     /// <summary>
-                    /// 
+                    /// ANN Mode and result in microseconds
                     /// </summary>
-                    microseconds_InANNMode,
+                    microseconds_InANNMode, 
                     /// <summary>
-                    /// 
+                    /// Undefined
                     /// </summary>
                     undefined
                 };
 
                 /// <summary>
-                /// Constructor with Slave Address = 0x70 and Bus Frequency = 100kHz
+                /// Constructor with SLave Address = 0x70 and bus Frequency = 100kHz
                 /// </summary>
                 public SRF08()
                 {
@@ -136,7 +152,9 @@ namespace testMicroToolsKit
                 /// <summary>
                 /// Constructor with Bus Frequency = 100kHz
                 /// </summary>
-                /// <param name="SLA">7 bits Slave Address (0x70 to 0x7F) 0x70 by default</param>
+                /// <param name="SLA">The default shipped address of the SRF08 is 0x70. 
+                ///  It can be changed by the user to any of 16 addresses (70 to 7F). 
+                ///  </param>
                 public SRF08(byte SLA)
                 {
                     _sla = SLA;
@@ -145,7 +163,8 @@ namespace testMicroToolsKit
                 /// <summary>
                 /// Constructor
                 /// </summary>
-                /// <param name="SLA">7 bits Slave Address (0x70 to 0x7F)</param>
+                /// <param name="SLA">The default shipped address of the SRF08 is 0x70. 
+                ///  It can be changed by the user to any of 16 addresses (70 to 7F). </param>
                 /// <param name="Frequency">400kHz max</param>
                 public SRF08(ushort SLA, UInt16 Frequency)
                 {
@@ -188,7 +207,6 @@ namespace testMicroToolsKit
                 /// <summary>
                 /// Light Sensor Register Get Access
                 /// </summary>
-                /// <return></return>
                 public byte LightSensor
                 {
                     get
@@ -198,7 +216,7 @@ namespace testMicroToolsKit
                     }
                 }
                 /// <summary>
-                /// 1st Echo High Byte
+                /// 1st Echo High Byte Get Access
                 /// </summary>
                 public byte FirstEchoHighByte
                 {
