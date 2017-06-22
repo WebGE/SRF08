@@ -224,7 +224,7 @@
 			<strong>Exemple</strong><br>
 			<pre>
 using System.Threading;
-using Microtoolskit.Hardware.Displays;
+using Microtoolskit.Hardware.Sensors;
 
 namespace FezPanda
 {
@@ -233,7 +233,7 @@ namespace FezPanda
         public static void Main()
         {
 			SRF08 I2CTelemeter = new SRF08();
-			
+
 			while(true)
 			{
 				Debug.Print("Distance: " + I2CTelemeter.ReadRange(SRF08.MeasuringUnits.centimeters_InRangingMode) + "cm");
