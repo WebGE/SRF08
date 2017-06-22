@@ -54,7 +54,7 @@ Fez Panda III, Netduino plus 2
 
 <strong>Todo list</strong>
 -------------------
-Changing i2c address. Changing the Range.
+Changing the i2c bus address. Changing the Range. Changing the Gain.
 
 <strong>To get started</strong>
 --------------------
