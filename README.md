@@ -29,8 +29,8 @@ This class is also in the [MicroToolsKit](https://www.nuget.org/packages/WEBGE.M
 
 ![SRF08](img/srf08.png)
 
-* **Netduino** : class test program for Netduino board (Todo)
-* **FezPanda** : class test program for Fez Panda board(Todo)
+* **Netduino** : class test program for Netduino board
+* **FezPanda** : class test program for Fez Panda board
 
 ## Assembly
 
