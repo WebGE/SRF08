@@ -1,76 +1,73 @@
 # SRF08
 
-<strong>Description</strong>
--------------------------------------
+## Description
+
 Source code.
 
-A <strong>.NETMF v4.3 class</strong> write for a : <strong>Devantech SRF08 UltraSonic range finder</strong>. 
+A **.NETMF v4.3** class write for a : Devantech SRF08 UltraSonic range finder. 
 
-This class is also in the <a href="https://www.nuget.org/packages/WEBGE.Microtoolskit/" target="_blank">MicroToolsKit</a> <strong>library</strong>. Download at <a href="https://www.nuget.org" target="_blank">nuget.com</a>
+This class is also in the [MicroToolsKit](https://www.nuget.org/packages/WEBGE.Microtoolskit/) **library**. Download at [nuget.org](https://www.nuget.org).
 
- <img src="img/nuget.JPG" align="center" />
+![nuget](img/nuget.JPG)
 
-<strong>Hardware</strong>
----------------------
-<strong> Targets </strong>: Netduino, Netduino2 plus, Netduino 3, FEZ PANDA 3 et COBRA 3.
+## Hardware
 
-<strong>Software</strong>
----------------------
-<ul>
-<li><strong>Language</strong> : C#</li>
-<li><strong>Framework used</strong> : .NETMF 4.3</li>
-<li><strong>IDE</strong> : Visual Studio Community 2015</li>
-<li><strong>xml</strong> : documentation inside class </li> 
-</ul>
+**Targets**: Netduino, Netduino2 plus, Netduino 3, FEZ PANDA 3 et COBRA 3.
 
-<strong> Visual Studio solution</strong>
--------------------------------------
-<ul>
-<li><strong>SRF08</strong>
-<ul>
-<li><strong>SRF08</strong> : .NetMF class</li>
-<img src="img/srf08.png" />
-<li><strong>Netduino</strong> : class test program for Netduino board (Todo)</li>
-<li><strong>FezPanda</strong> : class test program for Fez Panda board(Todo)</li>
-</ul>
-</li>
-</ul>
+## Software
 
-<strong>Assembly</strong>
---------------------------
-<img src="img/srf08.jpg" />
+* **Language** : C#
+* **Framework used** : .NETMF 4.3
+* **IDE** : Visual Studio Community 2015
+* **xml** : documentation inside class  
 
-<strong>Video</strong>
--------------------
+## Visual Studio solution
+
+* **SRF08**
+
+  * **SRF08** : .NetMF class
+
+![SRF08](img/srf08.png)
+
+* **Netduino** : class test program for Netduino board (Todo)
+* **FezPanda** : class test program for Fez Panda board(Todo)
+
+## Assembly
+
+![SRF08](img/srf08.jpg)
+
+## Video
+
 To come up
 
-<strong>Keywords</strong>
-----------------------------
+## Keywords
+
 I²C Bus, UltraSonic, range finder, Netduino, FEZ, PANDA, COBRA, C#, NETMF, Visual Studio.
 
-<strong>Tested on</strong>
--------------------
+## Tested on
+
 Fez Panda III, Netduino2 plus
 
-<strong>Todo list</strong>
--------------------
-Changing the i2c bus address. Changing the Range. Changing the Gain.
+## Todo list
 
-<strong>To get started</strong>
---------------------
-- <a href="http://webge.github.io/SRF08/" target="_blank">SRF08 GitHub Pages</a> (in French).
+* Changing the i2c bus address.
+* Changing the Range.
+* Changing the Gain.
 
-<strong>Feed on Google+</strong>
---------------------
-- <a href="https://plus.google.com/collection/oaaJX" target="_blank">C# embarqué et .NetMF v4.3 : Netduino et GHI FEZ</a> (in French).
+## To get started
 
-<strong>Wiki</strong>
---------------------
-- <a href="http://webge.dyndns-server.com/dokuwiki/doku.php?id=netmf43:accueilnetmf" target="_blank">C# embarqué et .NetMF v4.3 pour les cartes Netduino et GHI FEZ</a> (in French).
+[SRF08 GitHub Pages](http://webge.github.io/SRF08/) (French).
 
-<strong>Project site</strong>
---------------------
-- <a href ="http://webge.dyndns-server.com/dokuwiki/doku.php?id=netmf43:6_microtoolskit" target="_blank">MicroToolsKit library</a> (in English).
-<hr>
+## Feed on Google+
 
-<strong>Maintened by</strong> <a href="mailto:philippemariano@gmail.com">WebGe</a>
+* [C# embarqué et .NetMF v4.3 : Netduino et GHI FEZ](https://plus.google.com/collection/oaaJX) (French).
+
+## Wiki
+
+* [C# embarqué et .NetMF v4.3 pour les cartes Netduino et GHI FEZ](http://webge.dyndns-server.com/dokuwiki/doku.php?id=netmf43:accueilnetmf) (French).
+
+## Project site
+
+* [MicroToolsKit library](http://webge.dyndns-server.com/dokuwiki/doku.php?id=netmf43:6_microtoolskit) (English)
+
+**Maintened by** [WebGe](mailto:philippemariano@gmail.com)
